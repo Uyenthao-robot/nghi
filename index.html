@@ -18,30 +18,52 @@
             color: #00c6ff;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
         }
-       .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start; /* Đảm bảo căn trên cùng */
-    max-width: 1200px;
-    margin: 50px auto;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
-}
-
-.image {
-    flex: 1; /* Giữ hình ảnh nhỏ hơn so với nội dung */
-    text-align: right; /* Căn phải hình ảnh */
-}
-
-.image img {
-    max-width: 200px;
-    border-radius: 15px;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            max-width: 1200px;
+            margin: 50px auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+        }
+        .content {
+            flex: 2;
+        }
+        .content fieldset {
+            border: 2px solid #00c6ff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        .content legend {
+            font-weight: bold;
+            color: #00c6ff;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        .additional-box {
+            background: rgba(0, 198, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+        }
+        .additional-box h2 {
+            color: #00c6ff;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        .image {
+            flex: 1;
+            text-align: center;
+        }
+        .image img {
+            max-width: 200px;
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
         .image img:hover {
             transform: scale(1.1);
             box-shadow: 0 12px 20px rgba(0, 0, 0, 0.7);
@@ -85,9 +107,7 @@
                 <h2>Thông tin thêm</h2>
                 <p><strong>Số điện thoại liên lạc:</strong> 0123 456 789</p>
                 <p><strong>Câu lạc bộ:</strong> CLB Khoa học kỹ thuật</p>
-        <div class="image">
-            <img src="https://github.com/user-attachments/assets/7cf6bed7-dcfc-4ee8-99c1-12499cea732d" alt="Hình ảnh của Trần Quang Nghi">
+            </div>
         </div>
-    </div>
-</body>
-</html>
+        <div class="image">
+            <img src="https://github.com/user-attachments/assets/7cf6
